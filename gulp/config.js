@@ -4,7 +4,9 @@ let config = {
     'build': 'build/',
     'pug': 'src/pug/main.pug',
     'scss': 'src/scss/main.scss',
-    'index': 'src/index.pug'
+    'index': 'src/index.pug',
+    'img': 'src/img/*',
+    'fonts': 'src/fonts/*'
   }
 }
 

@@ -20,7 +20,7 @@ module.exports = function serve() {
     reload
   ))
 
-  watch(`${config.dir.pug}`, {events: ['all'], delay: 100}, series(
+  watch([`${config.dir.index}`], {events: ['all'], delay: 100}, series(
     compilePug,
     reload
   ))

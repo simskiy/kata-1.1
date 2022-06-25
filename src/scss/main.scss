@@ -1,7 +1,7 @@
-@import './fonts.scss';
-@import './mixins.scss';
-@import './variables.scss';
-@import './global.scss';
+@import './imorts/fonts.scss';
+@import './imports/mixins.scss';
+@import './imports/variables.scss';
+@import './imports/global.scss';
 
 .test {
   color:red;

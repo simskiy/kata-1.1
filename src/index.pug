@@ -12,26 +12,35 @@ html(lang="ru")
       .dialog__bg
       form.dialog__form.form
         h2.form__title Get iintoo it today
-        button.form__btn.form__btn--fb
-        button.form__btn.form__btn--in
-        p or
-        input.form__input(type="email", name="")
-        input.form__input(type="number", name="")
-        p What type of investor are you?
-        p Select the type of investor are below
-        ul
-          li
-            input(type="radio", name="")
-          li
-            input(type="radio", name="")
-          li
-            input(type="radio", name="")
-          li
-            input(type="radio", name="")
-        p I am a natural person investing on my own behalf as a sole owner, join tenant, or tennant in common
-        label
-          input(type="checkbox", name="")
-          |  I agree to the terms and receiving notifications iintoo
-          a(href="http://") View full terms
+        p.form__text.form__text--title There is no charge or obligation upon registration.
+        button.form__btn.form__btn--fb Register with Facebook
+        button.form__btn.form__btn--in Register with LinkedIn
+        p.form__text.form__text--separator OR
+        .form__input.form__input--email
+          input#email.input(type="email", placeholder="gus.goodwin@gmail.com", autocomplete="off")
+          label.input__label(for="email") Email
+        .form__input.form__input--phone
+          input#phone.input.input--phone(type="text", autocomplete="off")
+          label.input__label Phone
+        p.form__text.form__text--ask What type of investor are you?
+        p.form__text.form__text--choice Select the type of investor are below
+        ul.form__list.list
+          li.list__item
+            input#individual.list__input(type="radio", name="choice" checked)
+            label.list__label(for="individual") Individual
+          li.list__item
+            input#business.list__input(type="radio", name="choice")
+            label.list__label(for="business") Business
+          li.list__item
+            input#ira.list__input(type="radio", name="choice")
+            label.list__label(for="ira") IRA
+          li.list__item
+            input#trust.list__input(type="radio", name="choice")
+            label.list__label(for="trust") Trust
+        p.form__text.form__text--tip I am a natural person investing on my own behalf as a sole owner, join tenant, or tennant in common
+        label.form__agree.agree
+          input#agree.agree__input(type="checkbox", name="")
+          span.agree__text I agree to the terms and receiving notifications iintoo&nbsp;
+          a.aree__link(href="http://") View full terms
         button.form__btn.form__btn--create Create account
 
